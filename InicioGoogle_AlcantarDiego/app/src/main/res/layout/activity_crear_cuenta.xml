@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/black"
+        android:hint="Correo Electrónico"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Contraseña"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColorHint="@color/black"
+        android:hint="Confirmar Contraseña"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Crear Cuenta"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/volverLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes cuenta? Iniciar sesión"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="volverAlLogin"/>
+
+</LinearLayout>

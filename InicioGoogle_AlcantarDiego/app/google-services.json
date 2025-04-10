@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "787806576819",
+    "project_id": "inicio-ca57e",
+    "storage_bucket": "inicio-ca57e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787806576819:android:0ea06de045549c03b050c6",
+        "android_client_info": {
+          "package_name": "alcantar.diego.iniciogoogle_alcantardiego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787806576819-mkbm7d17jrl6s76k1vg3fqgik51u5i2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "alcantar.diego.iniciogoogle_alcantardiego",
+            "certificate_hash": "ce9d69def7a57f6bc21ca22392f909c817beac33"
+          }
+        },
+        {
+          "client_id": "787806576819-82q78ukpedp22ql8kv9p0a2p6gt536mg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCCAy3qFS_EGBRBAAXUem68igvy-Bzp0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787806576819-82q78ukpedp22ql8kv9p0a2p6gt536mg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
