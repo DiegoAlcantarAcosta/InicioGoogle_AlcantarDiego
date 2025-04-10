@@ -35,10 +35,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Inicializar Firebase Auth
         firebaseAuth = FirebaseAuth.getInstance()
 
-        // Configurar Google Sign In
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.web_client))
             .requestEmail()
@@ -46,14 +44,12 @@ class MainActivity : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        // Inicializar vistas
         etCorreo = findViewById(R.id.etCorreo)
         etPassword = findViewById(R.id.etPassword)
         btnLogin = findViewById(R.id.btn_login)
         btnCrearCuenta = findViewById(R.id.btn_crearCuenta)
         signInButton = findViewById(R.id.sign_in_button)
 
-        // Configurar listeners
         btnLogin.setOnClickListener {
             iniciarSesionConCorreo()
         }
@@ -70,7 +66,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        // Verificar si el usuario ya está autenticado
         val currentUser = firebaseAuth.currentUser
         if (currentUser != null) {
             irABienvenida()
@@ -108,7 +103,6 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == RC_SIGN_IN) {
             try {
                 val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-                // Manejo de posibles nulos
                 if (task.isSuccessful) {
                     val account = task.getResult(ApiException::class.java)
                     if (account != null && account.idToken != null) {
